@@ -1,0 +1,84 @@
+.inner{
+    max-width: none;
+    height: auto;
+}
+
+.header{
+    height: auto;
+}
+.header .inner{
+    text-align: left;
+}
+.header .btn-tg{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 15px;
+}
+.header .menu-group{
+    display: block;
+    padding-top: 15px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+.header .menu-group, .header .link-gruop{
+    float: none;
+}
+.header .menu-group .logo-div{
+    padding: 0 0 20px;
+}
+.header .menu-group ul{
+    display: block;
+}
+.header .menu-group ul li{
+    line-height: 1.3;
+    padding: 10px 0;
+}
+.header .link-gruop{
+    display: block;
+}
+.header .link-gruop ul{
+    display: block;
+}
+.header .link-gruop ul li    {
+    line-height: 1.3;
+    padding: 10px 0;
+}
+
+/*toggle 할 떄 사용*/
+.header .toggle{
+    display: none !important;
+    height: 1px;
+    transition: height 2s;
+
+}
+.header .toggle:active{
+}
+.header .toggle.on{
+    display: block !important;
+    height: 300px;
+    transition: height 2s;
+}
+
+
+/*section--github project*/
+.section__github-project .inner .project-img{
+    padding: 10px 10px 30px;
+}
+.section__github-project .inner .project-img ul{
+    display: block;
+}
+.section__github-project .inner .summary-description{
+    font-size: 16px;
+}
+
+/*section---diplay*/
+.section__display .inner .img-display ul {
+    grid-template-columns: repeat(2, 1fr);
+}
+.section__display .inner .img-display ul li{
+    padding: 10px;
+    text-align: center;
+}
