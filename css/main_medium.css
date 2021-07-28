@@ -49,17 +49,19 @@
 
 /*toggle 할 떄 사용*/
 .header .toggle{
-    display: none !important;
+    /*display: none !important;*/
     height: 1px;
-    transition: height 2s;
+    visibility: hidden;
+    transition: height 2s, visibility 1s;
 
 }
 .header .toggle:active{
 }
 .header .toggle.on{
-    display: block !important;
-    height: 300px;
-    transition: height 2s;
+    /*display: block !important;*/
+    height: 200px;
+    visibility: visible;
+    transition: height 2s, visibility 1s;
 }
 
 
