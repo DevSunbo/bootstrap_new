@@ -24,3 +24,17 @@
         }))
     }
 })(window, document);
+
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+    if(scrollLocation < 80){
+        header.style.position = 'relative';
+        header.style.backgroundColor = '#6f5499';
+    }
+    else{
+        header.style.position = 'fixed';
+        header.style.backgroundColor = '#fff';
+    }
+})
