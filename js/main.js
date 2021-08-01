@@ -37,4 +37,10 @@ window.addEventListener('scroll', () => {
         header.style.position = 'fixed';
         header.style.backgroundColor = '#fff';
     }
+    let screenWid = screen.width;
+    let screenHgt = screen.height;
+
+    let heightRatio = (scrollLocation / screenHgt) * 100;
+    let currentWid = (heightRatio / 100) * screenWid;
+    
 })
