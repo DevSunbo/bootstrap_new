@@ -4,6 +4,12 @@ body{
     background-color: #fff;
     color: #333;
 }
+.scrollLoc{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
 section{
     border-bottom: 1px solid #e5e5e5;
 }
@@ -99,6 +105,35 @@ a.btn{
     display: none;
 }
 
+.no-img{
+    height: 800px;
+}
+/*section---image-slide*/
+.section__image-slide{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.image-slide{
+    position: relative;
+    height: 100%;
+
+}
+.image-slide img{
+    height: 100%;
+    width: 100%;
+}
+.move-img-btn{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.izone2, .izone3, .izone4{
+    display: none;
+}
+.img-left{
+}
 /*section-----purple*/
 .section__purple{
     background-color: #6f5499;
