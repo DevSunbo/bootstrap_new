@@ -61,8 +61,6 @@ console.log(imgs);
     const imgs = document.querySelectorAll('.izone')
     let count = 0;
     imgLeft.addEventListener('click', async function  () {
-        console.log(imgs);
-        console.log(typeof imgs);
         if (count === 0) {
             count = 3;
         } else {
@@ -75,7 +73,6 @@ console.log(imgs);
 
     });
     imgRight.addEventListener('click', async function () {
-        console.log(imgs);
        /* const slider = new Promise(
             function (resolve, reject) {
                 if (count === 3) {
@@ -97,13 +94,11 @@ console.log(imgs);
 })(window, document);
 
 function makeNone (imgs) {
-    console.log('none', imgs[0]);
     imgs.forEach(v => {
         v.style.display = 'none';
     })
     return imgs;
 }
 function makeRelav (imgs, count){
-    console.log('relav', count);
     imgs[count].style.display = 'block';
 }
