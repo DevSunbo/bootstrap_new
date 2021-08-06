@@ -93,6 +93,7 @@ console.log(imgs);
     })
 })(window, document);
 
+//todo: 비디오 링크 삽입
 function makeNone (imgs) {
     imgs.forEach(v => {
         v.style.display = 'none';
