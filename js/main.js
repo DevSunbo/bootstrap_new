@@ -60,7 +60,7 @@ console.log(imgs);
     const img_slide = document.querySelector('.image-slide');
     const imgs = document.querySelectorAll('.izone')
     let count = 0;
-    imgLeft.addEventListener('click', async function  () {
+    imgLeft.addEventListener('click', async function () {
         if (count === 0) {
             count = 3;
         } else {
@@ -73,15 +73,15 @@ console.log(imgs);
 
     });
     imgRight.addEventListener('click', async function () {
-       /* const slider = new Promise(
-            function (resolve, reject) {
-                if (count === 3) {
-                    count = 0;
-                } else {
-                    count++;
-                }
-            }
-        );*/
+        /* const slider = new Promise(
+             function (resolve, reject) {
+                 if (count === 3) {
+                     count = 0;
+                 } else {
+                     count++;
+                 }
+             }
+         );*/
         if (count === 3) {
             count = 0;
         } else {
@@ -93,13 +93,24 @@ console.log(imgs);
     })
 })(window, document);
 
-//todo: 비디오 링크 삽입
-function makeNone (imgs) {
+(function (window, document) {
+    while (true) {
+        setTimeout(function autoSlide() {
+                document.querySelector('.img-right')[0].click();
+            }, 2000
+        )
+    }
+
+
+})(window, document);
+
+function makeNone(imgs) {
     imgs.forEach(v => {
         v.style.display = 'none';
     })
     return imgs;
 }
-function makeRelav (imgs, count){
+
+function makeRelav(imgs, count) {
     imgs[count].style.display = 'block';
 }
