@@ -94,12 +94,14 @@ console.log(imgs);
 })(window, document);
 
 (function (window, document) {
-    while (true) {
+    //todo: 2021.08.08 반복해서 클릭 시키지 ( 이미지 슬라이드 이동
+
+    // while (true) {
         setTimeout(function autoSlide() {
                 document.querySelector('.img-right')[0].click();
             }, 2000
         )
-    }
+    // }
 
 
 })(window, document);
